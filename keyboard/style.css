@@ -65,7 +65,7 @@
   .keyboard {
     width: 57%;
     display: flex;
-    gap: 8px 6px;
+    gap: 15px 6px;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
@@ -85,15 +85,43 @@
     font-size: 20px;
     cursor: pointer;
     background: rgb(129, 128, 128);
-    color:black
+    color:black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.8);
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   }
   
   .keyboard .key:hover {
     background: rgb(70, 69, 69);
+    -webkit-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+
   }
   
   .keyboard .key.key-down {
     background: rgb(70, 69, 69);
+    -webkit-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
   }
   
   .hidden {
