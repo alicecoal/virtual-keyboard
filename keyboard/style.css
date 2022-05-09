@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  * a {
+    text-decoration: none;
+  }
+  
+  body {
+    background: white;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .title {
+    user-select: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 25px;
+    padding: 15px;
+  }
+  
+  .input-text {
+    width: 700px;
+    height: 200px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.15;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+    resize: none;
+    background: white;
+    color: black;
+    border-radius: 9px;
+  }
+  
+  .description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.15;
+    font-size: 20px;
+    color: black;
+    user-select: none;
+  }
+  
+  .keyboard {
+    width: 57%;
+    display: flex;
+    gap: 15px 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    margin-top: 20px;
+  }
+  
+  .keyboard .key {
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 50px;
+    min-width: 50px;
+    align-items: center;
+    user-select: none;
+    font-size: 20px;
+    cursor: pointer;
+    background: rgb(129, 128, 128);
+    color:black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.8);
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  }
+  
+  .keyboard .key:hover {
+    background: rgb(70, 69, 69);
+    -webkit-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+
+  }
+  
+  .keyboard .key.key-down {
+    background: rgb(70, 69, 69);
+    -webkit-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  }
+  
+  .hidden {
+    display: none;
+  }
