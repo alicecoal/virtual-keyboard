@@ -15,7 +15,7 @@ const KEYS_RU = [
     'CapsLock', 'KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyK', 'KeyL', 'Semicolon', 'Quote', 'Enter',
     'ShiftLeft', 'KeyZ', 'KeyX', 'KeyC', 'KeyV', 'KeyB', 'KeyN', 'KeyM', 'Comma', 'Period', 'Slash', 'ArrowUp', 'ShiftRight',
     'ControlLeft', 'MetaLeft', 'AltLeft', 'Space', 'AltRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight', 'ControlRight'];
-  if (!localStorage.getItem('language')) localStorage.setItem('language', 'RU');
+  if (!localStorage.getItem('language')) localStorage.setItem('language', 'EN');
 
   const bodyContent = 
   `<div class="container">
@@ -33,17 +33,17 @@ const KEYS_RU = [
     for (let i = 0; i < 64; i += 1) {
     let j;
     if (i == 14) j = 50; 
-    if (i == 13) j = 100; 
+    if (i == 13 || i == 29) j = 100; 
     if (i == 41 || i == 54 || i == 42) j = 88; 
     if (i == 58) j = 350; 
     const kol = `<div id="Key${i}" class="key" style="width: ${j}px;">
-    <span class="EN ${localStorage.getItem('language') === 'RU' ? 'hidden' : ''}">
+    <span class="EN ${localStorage.getItem('language') === 'EN' ? 'hidden' : ''}">
         <span class="keyDown">${KEYS_EN[i][0]}</span>
         <span class="shift hidden">${KEYS_EN[i][1]}</span>
         <span class="caps hidden">${KEYS_EN[i][2]}</span>
         <span class="shift-caps hidden">${KEYS_EN[i][3]}</span>
     </span>
-    <span class="RU ${localStorage.getItem('language') === 'EN' ? 'hidden' : ''}">
+    <span class="RU ${localStorage.getItem('language') === 'RU' ? 'hidden' : ''}">
         <span class="keyDown">${KEYS_RU[i][0]}</span>
         <span class="shift hidden">${KEYS_RU[i][1]}</span>
         <span class="caps hidden">${KEYS_RU[i][2]}</span>
